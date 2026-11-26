@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>事件契约注册 · 版本兼容工作台</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="rail">
+      <div class="brand">
+        <div class="brand-mark">EC</div>
+        <div>
+          <div class="brand-title">事件契约注册</div>
+          <div class="brand-sub">版本兼容工作台</div>
+        </div>
+      </div>
+      <div class="rail-label">事件类型</div>
+      <div id="event-list"></div>
+      <div class="rail-foot">
+        <div>生产者 / 消费者按契约版本配对，</div>
+        <div>逐字段给出可执行结论。</div>
+      </div>
+    </aside>
+    <main id="main">
+      <div class="empty">正在加载…</div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
